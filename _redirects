@@ -1,0 +1,4 @@
+# Netlify: trae los datos oficiales a través de la propia web (evita el bloqueo del navegador)
+/api/dgt      https://nap.dgt.es/datex2/v3/dgt/SituationPublication/datex2_v37.xml  200!
+/api/aemet/*  https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/:splat   200!
+/api/valhalla https://valhalla1.openstreetmap.de/route  200!

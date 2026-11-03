@@ -1,0 +1,23 @@
+# Mismas reglas que _redirects, por si Netlify despliega desde un repositorio
+[[redirects]]
+  from = "/api/dgt"
+  to = "https://nap.dgt.es/datex2/v3/dgt/SituationPublication/datex2_v37.xml"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/aemet/*"
+  to = "https://www.aemet.es/documentos_d/eltiempo/prediccion/avisos/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/valhalla"
+  to = "https://valhalla1.openstreetmap.de/route"
+  status = 200
+  force = true
+
+[[headers]]
+  for = "/api/*"
+  [headers.values]
+    Cache-Control = "public, max-age=120"
